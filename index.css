@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');
+
+/* Adapted from Rahul-pxl's codepen */
+
+body {
+  background-color: #fafafa;
+  font-family: 'Noto Serif', serif;
+}
+
+.comment-container {
+  width: 60%;
+  margin: 2rem auto;
+}
+a {
+  color: #c40030;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: -42px;
+  border-radius: 50%;
+}
+
+.v-avatar {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.v-avatar img {
+  border-radius: 50%;
+  display: inline-flex;
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+}
+
+.elevation-2 {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+:after,
+:before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+button {
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: 0;
+  padding: 0;
+}
+
+[type="button"]::-moz-focus-inner,
+button:-moz-focusring {
+  outline: 0;
+  border: 0;
+}
+
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+
+img {
+  border-style: none;
+}
+
+.caption {
+  display: inline;
+  padding-right: 35px;
+  font-weight: 400;
+  font-size: 12px !important;
+}
+
+.theme--light .v-card {
+  box-shadow: rgba(0, 0, 0, 0.11) 0 15px 30px 0px,
+    rgba(0, 0, 0, 0.08) 0 5px 15px 0 !important;
+}
+
+.theme--light.application .v-card {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08) !important;
+  color: #102c3c !important;
+}
+
+.theme--light.v-card,
+.theme--light.v-sheet {
+  background-color: #fff;
+  border-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.wrapper {
+  overflow: auto;
+}
+
+.answers {
+  padding-left: 64px;
+}
+
+.comment {
+  positive: relative;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+p {
+  margin: 0;
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 3vw;
+  font-style: italic;
+  position:absolute;
+  top: 1%;
+  left: 35%;
+}
+
+.displayName {
+  margin-left: 24px;
+}
+
+.actions {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.google-span[data-v-35838f51] {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.google-button[data-v-35838f51] {
+  background-color: #fff;
+  height: 40px;
+  margin: 0;
+}
+
+.headline {
+  margin-left: 32px;
+}
+
+.sign-in-wrapper {
+  margin-top: 16px;
+  margin-left: 32px;
+}
+
+
+.error-message {
+  font-style: oblique;
+  color: #c40030;
+}
+
+::-moz-selection,
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+.card,
+.card {
+  margin-top: 12vh;
+  padding: 32px 16px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.application a,
+[type="button"],
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .comment-container {
+    width: 90%;
+  }
+  .comments {
+    padding: 32px;
+  }
+}
